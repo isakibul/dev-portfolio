@@ -10,7 +10,6 @@ const Navbar = () => {
         setToggle(!toggle);
     }
 
-    console.log(toggle);
     return (
         <div className="px-10 md:px-30 lg:px-40">
             <div className="flex justify-between my-6 items-center">
