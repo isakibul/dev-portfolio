@@ -7,6 +7,11 @@ const Hero = () => {
     const [showSubtitle, setShowSubtitle] = useState(false);
     return (
         <div className='px-10 md:px-30 lg:px-40'>
+
+
+            <div className='h-40 w-40 hidden md:block rounded-full -translate-y-16 translate-x-96 absolute animation-circle'>
+            </div>
+
             <div className="mt-20 flex flex-col items-center justify-center md:flex-row md:justify-between">
                 <div className="text-center md:text-left text-xl">
                     <TypeAnimation
@@ -18,7 +23,7 @@ const Hero = () => {
                         speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                         wrapper="h1"
                         repeat={0}
-                        className='text-5xl md:text-6xl font-semibold'
+                        className='text-4xl md:text-6xl text-white font-semibold z-50'
                     />
                     {showSubtitle &&
                         <TypeAnimation
@@ -27,7 +32,7 @@ const Hero = () => {
                                 500,
                                 'A Web Application Developer.',
                                 1000,
-                                'A CS Student.',
+                                'A Computer Science Student.',
                                 1000,
                                 'A problem solver.',
                                 1000,
@@ -61,21 +66,25 @@ const Hero = () => {
                             deletionSpeed={65}
                             wrapper="h5"
                             repeat={Infinity}
-                            className='mt-2 text-xl font-semibold text-gray-800 md:text-2xl'
+                            className='mt-2 text-l font-semibold text-gray-400 md:text-2xl'
                         />
                     }
                 </div>
+
                 <div className="mt-20 md:mt-0">
                     <img src={heroImg} alt="person image" />
                 </div>
             </div>
-            <div className="mt-14 md:mt-0 flex justify-center md:justify-start">
+            {/* scroll down animation */}
+            <div className="mt-14 md:mt-0 flex justify-between md:justify-start">
                 <button
-                    className='flex text-2xl font-semibold text-gray-800 scroll-indicator'
+                    className='flex text-2xl font-semibold text-white scroll-indicator'
                 >
                     Scroll down &nbsp;
                     <BsFillFileArrowDownFill className='text-3xl' />
                 </button>
+                <div className='h-20 w-20 hidden md:block rounded-full -translate-y-16 translate-x-96 absolute right-20 bottom-10 animation-circle-two'>
+                </div>
             </div>
         </div>
     );

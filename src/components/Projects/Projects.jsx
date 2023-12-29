@@ -21,8 +21,8 @@ const Projects = () => {
                                 ))}
                             </div>
                             <div className='flex justify-center gap-5'>
-                                <a href={project.github} className='text-xl font-semibold py-3 px-7 outline outline-2 outline-blue-500 rounded-lg hover:bg-gray-200 ease-in duration-300'>Github</a>
-                                <a href={project.demo} className='flex items-center text-xl font-semibold py-3 px-7 bg-blue-500 text-white rounded-lg hover:bg-blue-600 ease-in duration-300'>
+                                <a href={project.github} target='_blank' className='text-xl font-semibold py-3 px-7 outline outline-2 outline-blue-500 rounded-lg hover:bg-gray-200 ease-in duration-300'>Github</a>
+                                <a href={project.demo} target='_blank' className='flex items-center text-xl font-semibold py-3 px-7 bg-blue-500 text-white rounded-lg hover:bg-blue-600 ease-in duration-300'>
                                     Demo
                                     <TiArrowRightThick className='ms-1' />
                                 </a>

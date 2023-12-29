@@ -27,3 +27,40 @@ body{
     transform: translateY(0);
   }
 }
+
+
+
+.animation-circle  {
+  animation: rotation 20s infinite;
+  background-color: #3B3B3B;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(600px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+.animation-circle-two  {
+  animation: rotations 20s infinite;
+  background-color: #3B3B3B;
+}
+
+@keyframes rotations {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}

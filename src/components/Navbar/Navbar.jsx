@@ -11,15 +11,15 @@ const Navbar = () => {
     }
 
     return (
-        <div className="px-10 md:px-30 lg:px-40">
-            <div className="flex justify-between my-6 items-center">
+        <div className="px-10 md:px-30 py-6 lg:px-40">
+            <div className="flex justify-between items-center">
                 <div>
                     <a href="/">
                         <img src="/logo.png" alt="site-log" className="w-10" />
                     </a>
                 </div>
                 <div>
-                    <ul className="hidden md:flex gap-10 text-2xl">
+                    <ul className="hidden md:flex text-white gap-10 text-2xl">
                         {NavbarElements.map((item, idx) => (
                             <li key={idx}>
                                 <a href={item.path}>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <button
-                        className="hidden md:block bg-blue-600 hover:bg-blue-800 px-4 py-2 text-white text-xl font-bold rounded"
+                        className="hidden md:block bg-blue-600 hover:bg-blue-800 px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
                     >
                         Resume
                     </button>
