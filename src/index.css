@@ -40,7 +40,7 @@ body{
     transform: translateX(0);
   }
   50% {
-    transform: translateX(600px);
+    transform: translateX(300px);
   }
   100%{
     transform: translateX(0px);
@@ -67,8 +67,14 @@ body{
 
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #3498db;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }

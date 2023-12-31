@@ -1,15 +1,15 @@
 const NavbarElements = [
   {
     name: "Projects",
-    path: "https://www.google.com/",
+    path: "#projects",
   },
   {
     name: "About",
-    path: "https://www.google.com/",
+    path: "#about",
   },
   {
     name: "Contact",
-    path: "https://www.google.com/",
+    path: "#contact",
   },
 ];
 

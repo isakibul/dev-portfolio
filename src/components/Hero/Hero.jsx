@@ -34,7 +34,7 @@ const Hero = () => {
                                 1000,
                                 'So, you are interested about me?',
                                 100,
-                                'Okay! This is Sakibul Islam',
+                                'Okay! This is Sakibul Islam...',
                                 1000,
                                 'A Web Application Developer.',
                                 1000,
@@ -54,16 +54,20 @@ const Hero = () => {
                                 1000,
                                 "Uhh...",
                                 1000,
-                                "Uhh... you can scroll down to see my projects now...",
+                                "Uhh... you can scroll down...",
                                 300,
                                 1000,
-                                "Seriously, my projects are elegant, go check them out!",
+                                "Seriously, my projects are elegant...",
+                                1000,
+                                "go & check them out!",
                                 1000,
                                 "You're uh...",
                                 1000,
                                 "You're uh... still here?",
                                 1000,
-                                "Ok, this has been fun, but I'm gonna restart the loop now! hahaha...",
+                                "Ok, this has been fun...",
+                                1000,
+                                "I'm gonna restart the loop now!",
                                 1000,
                                 "See ya! :)",
                                 500,
@@ -72,7 +76,7 @@ const Hero = () => {
                             deletionSpeed={65}
                             wrapper="h5"
                             repeat={Infinity}
-                            className='mt-2 text-l font-semibold text-gray-400 md:text-2xl'
+                            className='mt-2 text-l font-semibold text-white md:text-2xl'
                         />
                     }
                 </div>
@@ -82,7 +86,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* scroll down animation */}
-            <div className="mt-14 md:mt-0 flex justify-between md:justify-start">
+            <div className="mt-14 md:mt-0 hidden md:flex justify-between md:justify-start">
                 <button
                     className='flex text-2xl font-semibold text-white scroll-indicator'
                 >
