@@ -32,15 +32,9 @@ const Hero = () => {
                                 1000,
                                 'Dude! you are here?',
                                 1000,
-<<<<<<< HEAD
                                 'So, you are interested about me?',
-                                100,
-                                'Okay! This is Sakibul Islam...',
-=======
-                                'So, you are interested in me?',
                                 1000,
-                                'Okay! This is Sakibul Islam',
->>>>>>> origin/main
+                                'Okay! This is Sakibul Islam...',
                                 1000,
                                 'A Web Application Developer.',
                                 1000,
