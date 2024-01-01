@@ -42,8 +42,12 @@ const Contact = () => {
                     Send Email
                 </a>
             </div>
-            <SocialIcon />
-        </div>
+            <div
+                className="flex flex-row mt-12 gap-6 justify-center text-5xl text-gray-500 lg:hidden"
+            >
+                <SocialIcon />
+            </div>
+        </div >
     )
 }
 

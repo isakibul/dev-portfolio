@@ -1,15 +1,14 @@
-import headerBackground from '/hero-bg.png';
-import bottomBackground from '/bottom-bg.png';
 import ScrollToTop from "react-scroll-to-top";
-
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import SocialIcon from '../SocialIcon/SocialIcon';
-
+import headerBackground from '/hero-bg.png';
+import bottomBackground from '/bottom-bg.png';
 import { IoIosArrowUp } from "react-icons/io";
+
 
 const Home = () => {
     const headerBackgroundStyle = {
@@ -45,7 +44,11 @@ const Home = () => {
             <div style={headerBackgroundStyle} className='h-screen'>
                 <Navbar />
                 <Hero />
-                <SocialIcon />
+                <div
+                    className="hidden lg:flex lg:flex-col lg:fixed lg:top-1/3 lg:left-10 gap-6 text-5xl text-gray-500"
+                >
+                    <SocialIcon />
+                </div>
             </div>
             <Projects />
             <About />

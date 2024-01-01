@@ -9,11 +9,11 @@ const Hero = () => {
         <div className='px-10 md:px-30 lg:px-40'>
 
             {/* animation circle */}
-            <div className='h-40 w-40 hidden md:block rounded-full -translate-y-16 translate-x-96 absolute animation-circle'>
+            <div className='mt-10 h-28 w-28 hidden md:block rounded-full translate-y-20 translate-x-96 absolute animation-circle'>
             </div>
 
             {/* home text slider */}
-            <div className="mt-20 flex flex-col items-center justify-center md:flex-row md:justify-between">
+            <div className="mt-16 md:mt-0 flex flex-col items-center justify-center md:flex-row md:justify-between">
                 <div className="mt-5 text-center md:text-left text-xl">
                     <TypeAnimation
                         cursor={false}
@@ -82,17 +82,17 @@ const Hero = () => {
                     }
                 </div>
 
-                <div className="mt-20 md:mt-0">
+                <div className="mt-20 md:mt-10">
                     <img src={heroImg} alt="person image" />
                 </div>
             </div>
 
             {/* scroll down animation */}
-            <div className="mt-14 md:mt-0 hidden md:flex justify-between md:justify-start">
+            <div className="mt-14 md:mt-0 md:flex justify-between md:justify-start">
                 <button
-                    className='flex text-2xl font-semibold text-white scroll-indicator'
+                    className='hidden md:flex text-2xl font-semibold text-white scroll-indicator'
                 >
-                    Scroll down &nbsp;
+                    Scroll down
                     <BsFillFileArrowDownFill className='text-3xl' />
                 </button>
 
