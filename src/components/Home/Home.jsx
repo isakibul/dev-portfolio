@@ -7,6 +7,9 @@ import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import SocialIcon from '../SocialIcon/SocialIcon';
+
+import { IoIosArrowUp } from "react-icons/io";
 
 const Home = () => {
     const headerBackgroundStyle = {
@@ -17,20 +20,32 @@ const Home = () => {
     };
 
     const bottomBackgroundStyle = {
+        ...headerBackgroundStyle,
         backgroundImage: `url(${bottomBackground})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
     };
 
     return (
         <div>
             {/* scroll top */}
-            <ScrollToTop smooth color="#ffffff" className='flex justify-center items-center bg-[#3498db]' />
+            <ScrollToTop
+                smooth
+                style={{
+                    backgroundColor: '#3498db',
+                    color: '#fff',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    fontSize: '24px',
+                    borderRadius: '50%',
+                    padding: '5px',
+                }}
+                component={<IoIosArrowUp />}
+            />
 
             <div style={headerBackgroundStyle} className='h-screen'>
                 <Navbar />
                 <Hero />
+                <SocialIcon />
             </div>
             <Projects />
             <About />

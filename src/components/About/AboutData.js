@@ -1,15 +1,15 @@
-import html from "../../../public/html5-original.svg";
-import css from "../../../public/css3-original.svg";
-import javascript from "../../../public/javascript-original.svg";
-import react from "../../../public/react-original.svg";
-import tailwind from "../../../public/tailwindcss-plain.svg";
-import bootstrap from "../../../public/bootstrap-original.svg";
-import material from "../../../public/materialui-original.svg";
-import chakra from "../../../public/chakra.png";
-import firebase from "../../../public/firebase-plain.svg";
-import node from "../../../public/nodejs-original.svg";
-import mongodb from "../../../public/mongodb-original.svg";
-import git from "../../../public/git-original.svg";
+import html from "/html5-original.svg";
+import css from "/css3-original.svg";
+import javascript from "/javascript-original.svg";
+import react from "/react-original.svg";
+import tailwind from "/tailwindcss-plain.svg";
+import bootstrap from "/bootstrap-original.svg";
+import material from "/materialui-original.svg";
+import chakra from "/chakra.png";
+import firebase from "/firebase-plain.svg";
+import node from "/nodejs-original.svg";
+import mongodb from "/mongodb-original.svg";
+import git from "/git-original.svg";
 
 const aboutData = [
   {

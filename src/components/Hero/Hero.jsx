@@ -60,7 +60,7 @@ const Hero = () => {
                                 1000,
                                 "Seriously, my projects are elegant...",
                                 1000,
-                                "go & check them out!",
+                                "Go & check them out!",
                                 1000,
                                 "You're uh...",
                                 1000,

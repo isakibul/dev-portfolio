@@ -1,4 +1,5 @@
 import { MdCopyAll } from "react-icons/md";
+import SocialIcon from "../SocialIcon/SocialIcon";
 
 const Contact = () => {
 
@@ -17,7 +18,7 @@ const Contact = () => {
                 Get In Touch
             </p>
             <div
-                className="mt-10 md:mt-20 flex flex-col md:flex-row md:justify-between md:px-40 md:py-20 gap-4 text-center p-5 shadow-2xl"
+                className="mt-10 md:mt-20 flex flex-col md:flex-row md:justify-between md:px-32 md:py-20 gap-4 text-center p-5 shadow-2xl"
             >
                 <div
                     className="flex flex-col items-center gap-4 md:flex-row"
@@ -41,6 +42,7 @@ const Contact = () => {
                     Send Email
                 </a>
             </div>
+            <SocialIcon />
         </div>
     )
 }
