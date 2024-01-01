@@ -8,16 +8,17 @@ const Hero = () => {
     return (
         <div className='px-10 md:px-30 lg:px-40'>
 
-
+            {/* animation circle */}
             <div className='h-40 w-40 hidden md:block rounded-full -translate-y-16 translate-x-96 absolute animation-circle'>
             </div>
 
+            {/* home text slider */}
             <div className="mt-20 flex flex-col items-center justify-center md:flex-row md:justify-between">
-                <div className="text-center md:text-left text-xl">
+                <div className="mt-5 text-center md:text-left text-xl">
                     <TypeAnimation
                         cursor={false}
                         sequence={[
-                            'Hi, I\'m Sakib.',
+                            'Hi, I\'m SaKib.',
                             () => setShowSubtitle(true)
                         ]}
                         speed={{ type: "keyStrokeDelayInMs", value: 150 }}
@@ -85,6 +86,7 @@ const Hero = () => {
                     <img src={heroImg} alt="person image" />
                 </div>
             </div>
+
             {/* scroll down animation */}
             <div className="mt-14 md:mt-0 hidden md:flex justify-between md:justify-start">
                 <button
@@ -93,6 +95,8 @@ const Hero = () => {
                     Scroll down &nbsp;
                     <BsFillFileArrowDownFill className='text-3xl' />
                 </button>
+
+                {/* animation circle two */}
                 <div className='h-20 w-20 hidden md:block rounded-full -translate-y-16 translate-x-96 absolute right-20 bottom-10 animation-circle-two'>
                 </div>
             </div>

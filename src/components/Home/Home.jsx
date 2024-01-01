@@ -1,5 +1,6 @@
 import headerBackground from '/hero-bg.png';
 import bottomBackground from '/bottom-bg.png';
+import ScrollToTop from "react-scroll-to-top";
 
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
@@ -24,6 +25,9 @@ const Home = () => {
 
     return (
         <div>
+            {/* scroll top */}
+            <ScrollToTop smooth color="#ffffff" className='flex justify-center items-center bg-[#3498db]' />
+
             <div style={headerBackgroundStyle} className='h-screen'>
                 <Navbar />
                 <Hero />
