@@ -57,19 +57,19 @@ const Projects = () => {
                                 ))}
                             </div>
                             <div
-                                className='flex justify-center gap-5'
+                                className='flex justify-center gap-6 mt-2'
                             >
                                 <a
                                     href={project.github}
                                     target='_blank'
-                                    className='text-xl font-semibold py-2 md:py-3 px-5 md:px-7 outline outline-2 outline-[#3498db] rounded-lg hover:bg-gray-200 ease-in duration-300'
+                                    className='text-xl flex items-center font-semibold py-2 md:py-3 px-5 md:px-7 outline outline-2 outline-[#3498db] rounded-lg hover:bg-gray-200 ease-in duration-300'
                                 >
                                     Github
                                 </a>
                                 <a
                                     href={project.demo}
                                     target='_blank'
-                                    className='flex items-center text-xl font-semibold py-2 md:py-3 px-5 md:px-7 0 text-white rounded-lg bg-[#3498db] hover:bg-blue-600 ease-in duration-300'
+                                    className='flex items-center text-xl font-semibold py-2 md:py-4 px-5 md:px-7 text-white rounded-lg bg-[#3498db] hover:bg-blue-600 ease-in duration-300'
                                 >
                                     Demo
                                     <TiArrowRightThick className='ms-1' />
