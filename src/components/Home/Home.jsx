@@ -24,7 +24,7 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="font-righteous">
             {/* scroll top */}
             <ScrollToTop
                 smooth
