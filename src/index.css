@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 
+/* hero image animation */
+@keyframes moveOutline {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  25% {
+    box-shadow: 0 0 0 8px white, 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  75% {
+    box-shadow: 0 0 0 8px white, 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+
 
 /* animation */
 .scroll-indicator {

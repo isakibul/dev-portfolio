@@ -22,7 +22,7 @@ const About = () => {
                 <p
                     className="md:tracking-wide"
                 >
-                    My journey into the world of technology began with a strong passion for working with computer technologies, which led me to pursue the Computer Science program. Despite its challenges, I always enjoy the learning and working with computer technologies.
+                    My journey into the world of technology began with a strong passion for working with computer technologies, which led me to pursue the Computer Science program.
                 </p>
                 <br />
                 <p

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import heroImg from '/hero-img.png';
+import heroImg from '/hero-img.jpeg';
 import { TypeAnimation } from 'react-type-animation';
-import { BsFillFileArrowDownFill } from "react-icons/bs";
+import { FaRegArrowAltCircleDown } from "react-icons/fa";
 
 const Hero = () => {
     const [showSubtitle, setShowSubtitle] = useState(false);
@@ -77,23 +77,28 @@ const Hero = () => {
                             deletionSpeed={65}
                             wrapper="h5"
                             repeat={Infinity}
-                            className='mt-2 text-l font-semibold text-white md:text-2xl'
+                            className='mt-2 text-l h-10 font-semibold text-white md:text-2xl'
                         />
                     }
                 </div>
 
                 <div className="mt-20 md:mt-10">
-                    <img src={heroImg} alt="person image" />
+                    <img src={heroImg} alt="person image" className='w-80 lg:w-96 relative'
+                        style={{
+                            animation: "moveOutline 4s linear infinite",
+                            borderRadius: "50%",
+                            overflow: "hidden"
+                        }} />
                 </div>
             </div>
 
             {/* scroll down animation */}
             <div className="mt-14 md:mt-0 md:flex justify-between md:justify-start">
                 <button
-                    className='hidden md:flex text-2xl font-semibold text-white scroll-indicator'
+                    className='hidden md:flex items-center gap-1  text-2xl font-semibold text-white scroll-indicator'
                 >
                     Scroll down
-                    <BsFillFileArrowDownFill className='text-3xl' />
+                    <FaRegArrowAltCircleDown className='text-3xl' />
                 </button>
 
                 {/* animation circle two */}
