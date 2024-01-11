@@ -29,7 +29,7 @@ html{
 
 /* animation */
 .scroll-indicator {
-  animation: bounceUpDown 3s infinite alternate;
+  animation: bounceUpDown 4s infinite alternate;
 }
 
 @keyframes bounceUpDown {

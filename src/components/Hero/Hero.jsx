@@ -55,7 +55,7 @@ const Hero = () => {
                                 1000,
                                 "Uhh...",
                                 1000,
-                                "Uhh... you can scroll down...",
+                                "Uhh... you can scroll down to see my projects...",
                                 300,
                                 1000,
                                 "Seriously, my projects are elegant...",
@@ -82,7 +82,7 @@ const Hero = () => {
                     }
                 </div>
 
-                <div className="mt-20 md:mt-10">
+                <div className="mt-32 md:mt-20">
                     <img src={heroImg} alt="person image" className='w-80 lg:w-96 relative'
                         style={{
                             animation: "moveOutline 4s linear infinite",
