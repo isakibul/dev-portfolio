@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  overflow-x: hidden;
+}
 
 /* hero image animation */
 @keyframes moveOutline {

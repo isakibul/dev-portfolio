@@ -1,4 +1,3 @@
-import React from 'react';
 import projectData from "./ProjectData";
 import { TiArrowRightThick } from "react-icons/ti";
 
