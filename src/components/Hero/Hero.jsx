@@ -2,6 +2,7 @@ import { useState } from 'react';
 import heroImg from '/hero-img.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
+import scrollDown from "/scroll-down.svg"
 
 const Hero = () => {
     const [showSubtitle, setShowSubtitle] = useState(false);
@@ -95,10 +96,10 @@ const Hero = () => {
             {/* scroll down animation */}
             <div className="mt-14 md:mt-0 md:flex justify-between md:justify-start">
                 <button
-                    className='hidden md:flex items-center gap-1  text-2xl font-semibold text-white scroll-indicator'
+                    className='hidden md:flex items-center gap-2 text-2xl text-white scroll-indicator'
                 >
                     Scroll down
-                    <FaRegArrowAltCircleDown className='text-3xl' />
+                    <img src={scrollDown} alt="" className='w-6' />
                 </button>
 
                 {/* animation circle two */}

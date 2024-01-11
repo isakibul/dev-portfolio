@@ -42,6 +42,7 @@ const Home = () => {
                     fontSize: '24px',
                     borderRadius: '50%',
                     padding: '5px',
+                    zIndex: '999',
                 }}
                 component={<IoIosArrowUp />}
             />
