@@ -5,7 +5,7 @@ import { TiArrowRightThick } from "react-icons/ti";
 const Projects = () => {
     return (
         <div
-            className="mt-32 md:mt-48 px-10 md:px-30 lg:px-40"
+            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40"
             id='projects'
         >
             <p

@@ -3,7 +3,7 @@ import aboutData from "./AboutData";
 const About = () => {
     return (
         <div
-            className="mt-32 md:mt-48 px-10 md:px-30 lg:px-40" id="about"
+            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40" id="about"
         >
             <h1
                 className="text-3xl md:text-4xl font-semibold underline"
@@ -11,7 +11,7 @@ const About = () => {
                 About Me
             </h1>
             <div
-                className="mt-10 md:mt-20 py-10 px-8 md:py-20 md:px-32 text-sm md:text-xl shadow-2xl text-justify"
+                className="mt-10 md:mt-20 py-10 px-4 md:py-20 md:px-32 text-sm md:text-xl shadow-2xl text-justify"
             >
                 <p
                     className="md:tracking-wide"
@@ -36,7 +36,7 @@ const About = () => {
                 <div>
                     <strong>I have become confident using the following technologies:</strong>
                     <div
-                        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+                        className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
                     >
                         {aboutData.map((data, idx) => (
                             <div
@@ -44,12 +44,12 @@ const About = () => {
                                 key={idx}
                             >
                                 <img
-                                    className="w-12 mb-2"
+                                    className="w-10 mb-2"
                                     src={data.icon}
                                     alt={data.title}
                                 />
                                 <p
-                                    className="text-base font-bold text-gray-700"
+                                    className="font-bold text-gray-700"
                                 >
                                     {data.title}
                                 </p>
