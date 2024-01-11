@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import ScrollToTop from "react-scroll-to-top";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
@@ -9,14 +8,8 @@ import SocialIcon from '../SocialIcon/SocialIcon';
 import headerBackground from '/hero-bg.png';
 import bottomBackground from '/bottom-bg.png';
 import { IoIosArrowUp } from "react-icons/io";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Home = () => {
-    useEffect(() => {
-        AOS.init();
-    }, [])
-
     const headerBackgroundStyle = {
         backgroundImage: `url(${headerBackground})`,
         backgroundSize: 'cover',
@@ -56,12 +49,8 @@ const Home = () => {
                     <SocialIcon />
                 </div>
             </div>
-            <div data-aos="fade-right">
-                <Projects />
-            </div>
-            <div data-aos="fade-left">
-                <About />
-            </div>
+            <Projects />
+            <About />
             <div style={bottomBackgroundStyle} className='h-screen'>
                 <Contact />
             </div>
