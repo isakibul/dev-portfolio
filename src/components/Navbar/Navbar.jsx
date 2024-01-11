@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import NavbarElements from "./NavbarElements";
+import { NavbarElements } from "./NavbarElements";
 import { ImMenu } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -52,9 +53,9 @@ const Navbar = () => {
                                 key={idx}
                                 className="hover:text-gray-400 ease-in duration-200"
                             >
-                                <a href={item.path}>
+                                <HashLink smooth to={item.path}>
                                     {item.name}
-                                </a>
+                                </HashLink>
                             </li>
                         ))}
                     </ul>
@@ -85,9 +86,9 @@ const Navbar = () => {
                                 key={idx}
                                 className="mb-6 font-semibold hover:text-gray-800 ease-in duration-200" onClick={handleToggle}
                             >
-                                <a href={item.path}>
+                                <HashLink smooth to={item.path}>
                                     {item.name}
-                                </a>
+                                </HashLink>
                             </li>
                         ))}
                     </ul>

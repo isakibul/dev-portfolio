@@ -3,7 +3,8 @@ import aboutData from "./AboutData";
 const About = () => {
     return (
         <div
-            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40" id="about"
+            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40"
+            id="about"
         >
             <h1
                 className="text-3xl md:text-4xl font-semibold underline"
@@ -58,7 +59,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

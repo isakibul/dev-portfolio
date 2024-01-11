@@ -1,4 +1,4 @@
-const NavbarElements = [
+export const NavbarElements = [
   {
     name: "Projects",
     path: "#projects",
@@ -12,5 +12,3 @@ const NavbarElements = [
     path: "#contact",
   },
 ];
-
-export default NavbarElements;
