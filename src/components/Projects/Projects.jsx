@@ -44,12 +44,12 @@ const Projects = () => {
                                 {project.description}
                             </p>
                             <div
-                                className='flex justify-center gap-5 my-3'
+                                className='flex justify-center gap-3 my-3'
                             >
                                 {project.technologies.map((technology, index) => (
                                     <p
                                         key={index}
-                                        className='px-4 md:px-5 py-1 md:py-2 bg-gray-100 rounded-md shadow-2xl text-xl'
+                                        className='px-2 md:px-5 py-1 md:py-2 bg-gray-100 rounded-md shadow-2xl text-xs md:text-sm lg:text-base'
                                     >
                                         {technology}
                                     </p>
