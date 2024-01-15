@@ -1,12 +1,19 @@
 import { MdCopyAll } from "react-icons/md";
 import SocialIcon from "../SocialIcon/SocialIcon";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+    const notify = () => toast("Email copied!");
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText("isakibul@gmail.com");
     };
 
+    const handleCopy = () => {
+        copyToClipboard();
+        notify();
+    }
     return (
         <div
             className="mt-32 md:mt-48 px-4 pb-32 md:px-30 lg:px-40"
@@ -30,10 +37,11 @@ const Contact = () => {
                     </p>
                     <button
                         className="text-3xl md:text-4xl"
-                        onClick={copyToClipboard}
+                        onClick={handleCopy}
                     >
                         <MdCopyAll />
                     </button>
+                    <ToastContainer />
                 </div>
                 <a
                     href="mailto:isakibul@gmail.com"
