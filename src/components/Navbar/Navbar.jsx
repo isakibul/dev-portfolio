@@ -5,25 +5,24 @@ import { IoClose } from "react-icons/io5";
 import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(false);
+    const [navOpen, setNavOpen] = useState(false);
 
-    const handleToggle = () => {
-        setToggle(!toggle);
+    const handleNav = () => {
+        setNavOpen(!navOpen);
     }
 
     useEffect(() => {
-        const body = document.body;
-
-        if (toggle) {
-            body.style.overflow = "hidden";
-        } else {
-            body.style.overflow = "visible";
-        }
-        // Clean up the effect
-        return () => {
-            body.style.overflow = "visible";
+        const handleResize = () => {
+            if (window.innerWidth > 767) {
+                setNavOpen(false);
+            }
         };
-    }, [toggle]);
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
     return (
         <nav
@@ -70,13 +69,13 @@ const Navbar = () => {
                 <div
                     className="md:hidden"
                 >
-                    {toggle ? <IoClose className="cursor-pointer text-white text-[30px]" onClick={handleToggle} />
-                        : <ImMenu className="cursor-pointer text-white text-[30px]" onClick={handleToggle} />}
+                    {navOpen ? <IoClose className="cursor-pointer text-white text-[30px]" onClick={handleNav} />
+                        : <ImMenu className="cursor-pointer text-white text-[30px]" onClick={handleNav} />}
                 </div>
             </div>
 
             {/* mobile menu */}
-            {toggle && (
+            {navOpen && (
                 <div
                     className="md:hidden text-2xl flex flex-col justify-center items-center text-center fixed top-0 left-0 right-0 bottom-0 bg-white"
                 >
@@ -84,7 +83,7 @@ const Navbar = () => {
                         {NavbarElements.map((item, idx) => (
                             <li
                                 key={idx}
-                                className="mb-6 font-semibold hover:text-gray-800 ease-in duration-200" onClick={handleToggle}
+                                className="mb-6 font-semibold hover:text-gray-800 ease-in duration-200" onClick={handleNav}
                             >
                                 <HashLink smooth to={item.path}>
                                     {item.name}
@@ -99,7 +98,7 @@ const Navbar = () => {
                     </button>
                     <IoClose
                         className="mt-6 cursor-pointer text-[30px]"
-                        onClick={handleToggle}
+                        onClick={handleNav}
                     />
                 </div>
             )}
