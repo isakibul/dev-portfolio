@@ -3,6 +3,14 @@ import hungryhulk from "/hungryhulk.png";
 
 const projectData = [
   {
+    image: hungryhulk,
+    title: "HungryHulk",
+    description: "A stunning restaurant application with plenty of context.",
+    technologies: ["React", "Tailwind CSS", "Strapi"],
+    github: "https://github.com/isakibul/hungryhulk",
+    demo: "https://hungryhulk.vercel.app/",
+  },
+  {
     image: nextverse,
     title: "NextVerse",
     description:
@@ -10,14 +18,6 @@ const projectData = [
     technologies: ["React", "Chakra UI", "Firebase"],
     github: "https://github.com/isakibul/nextverse",
     demo: "https://nextverse-zeta.vercel.app/",
-  },
-  {
-    image: hungryhulk,
-    title: "HungryHulk",
-    description: "A stunning restaurant application with plenty of context.",
-    technologies: ["React", "Tailwind CSS", "Strapi"],
-    github: "https://github.com/isakibul/hungryhulk",
-    demo: "https://hungryhulk.vercel.app/",
   },
 ];
 
