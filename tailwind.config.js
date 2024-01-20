@@ -5,6 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       righteous: ["Righteous"],
+      rubik: ["Rubik"],
     },
   },
   plugins: [],

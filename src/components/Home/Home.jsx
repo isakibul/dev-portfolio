@@ -5,29 +5,23 @@ import Projects from "../Projects/Projects";
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import SocialIcon from '../SocialIcon/SocialIcon';
-import headerBackground from '/hero-bg.png';
-import bottomBackground from '/bottom-bg.png';
 import { IoIosArrowUp } from "react-icons/io";
+import bg from "/bg.jpg"
 
 const Home = () => {
-    const headerBackgroundStyle = {
-        backgroundImage: `url(${headerBackground})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-    };
-
-    const bottomBackgroundStyle = {
-        ...headerBackgroundStyle,
-        backgroundImage: `url(${bottomBackground})`,
-    };
+    // const headerBackgroundStyle = {
+    //     backgroundImage: `url(${bg})`,
+    //     backgroundSize: 'cover',
+    //     backgroundRepeat: 'no-repeat',
+    //     backgroundPosition: 'center',
+    // };
 
     return (
-        <div className="font-righteous">
+        <div className="font-rubik bg-[#0D1224]">
             <ScrollToTop
                 smooth
                 style={{
-                    backgroundColor: '#3498db',
+                    backgroundColor: '#773EEA',
                     color: '#fff',
                     display: 'flex',
                     justifyContent: 'center',
@@ -40,7 +34,7 @@ const Home = () => {
                 component={<IoIosArrowUp />}
             />
 
-            <div style={headerBackgroundStyle} className='h-screen'>
+            <div className='h-screen'>
                 <Navbar />
                 <Hero />
                 <div
@@ -51,9 +45,7 @@ const Home = () => {
             </div>
             <Projects />
             <About />
-            <div style={bottomBackgroundStyle} className='h-screen'>
-                <Contact />
-            </div>
+            <Contact />
         </div>
     );
 }

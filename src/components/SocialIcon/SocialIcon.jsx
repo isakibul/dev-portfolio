@@ -28,7 +28,7 @@ const SocialIcon = () => {
             {socialIconData.map((icon) =>
                 <a
                     key={icon.id}
-                    className="hover:text-gray-700 ease-in duration-300 text-4xl"
+                    className="text-white hover:text-gray-400 ease-in duration-300 text-4xl"
                     href={icon.link}
                     target="_blank"
                 >

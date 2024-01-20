@@ -45,12 +45,12 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul
-                        className="hidden md:flex text-white gap-10 text-2xl"
+                        className="hidden md:flex gap-10 text-2xl"
                     >
                         {NavbarElements.map((item, idx) => (
                             <li
                                 key={idx}
-                                className="hover:text-gray-400 ease-in duration-200"
+                                className="text-white hover:text-gray-400 ease-in duration-200"
                             >
                                 <HashLink smooth to={item.path}>
                                     {item.name}
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <button
-                        className="hidden md:block bg-[#3498db] hover:bg-blue-600 px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
+                        className="hidden md:block bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
                     >
                         Resume
                     </button>
@@ -77,13 +77,13 @@ const Navbar = () => {
             {/* mobile menu */}
             {navOpen && (
                 <div
-                    className="md:hidden text-2xl flex flex-col justify-center items-center text-center fixed top-0 left-0 right-0 bottom-0 bg-white"
+                    className="md:hidden text-2xl flex flex-col justify-center items-center text-center fixed top-0 left-0 right-0 bottom-0 bg-[#000115]"
                 >
                     <ul>
                         {NavbarElements.map((item, idx) => (
                             <li
                                 key={idx}
-                                className="mb-6 font-semibold hover:text-gray-800 ease-in duration-200" onClick={handleNav}
+                                className="text-white hover:text-gray-400 mb-6 ease-in duration-200" onClick={handleNav}
                             >
                                 <HashLink smooth to={item.path}>
                                     {item.name}
@@ -92,12 +92,12 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <button
-                        className="bg-blue-600 hover:bg-blue-800 px-4 py-2 text-white text-xl font-bold rounded"
+                        className="bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded"
                     >
                         Resume
                     </button>
                     <IoClose
-                        className="mt-6 cursor-pointer text-[30px]"
+                        className="mt-6 cursor-pointer text-[30px] text-white hover:text-gray-400"
                         onClick={handleNav}
                     />
                 </div>

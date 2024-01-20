@@ -3,7 +3,7 @@ import aboutData from "./AboutData";
 const About = () => {
     return (
         <div
-            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40"
+            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40 text-white"
             id="about"
         >
             <h1
@@ -12,24 +12,18 @@ const About = () => {
                 About Me
             </h1>
             <div
-                className="mt-10 md:mt-20 py-10 px-4 md:py-20 md:px-32 text-sm md:text-xl shadow-2xl text-justify"
+                className="mt-10 md:mt-20 py-10 px-4 md:py-20 md:px-32 text-sm md:text-base shadow-2xl text-justify bg-[#0a122e]"
             >
                 <p
                     className="md:tracking-wide"
                 >
-                    Hello! My name is <strong>Sakibul Islam</strong>. I'am from Bogura, Bangladesh. Iam a Computer science student and a web application developer. I have gained a lot of knowledge in the filed of web development during previous couple years.
+                    Hello! My name is <strong>Sakibul Islam</strong>. I'am from Bogura, Bangladesh. Iam a Computer science student and a web application developer. I have gained a lot of knowledge in the filed of web development during previous couple years. My journey into the world of technology began with a strong passion for working with computer technologies, which led me to pursue the Computer Science program.
                 </p>
                 <br />
                 <p
                     className="md:tracking-wide"
                 >
-                    My journey into the world of technology began with a strong passion for working with computer technologies, which led me to pursue the Computer Science program.
-                </p>
-                <br />
-                <p
-                    className="md:tracking-wide"
-                >
-                    I have a lot of web technologies in previous couple years. And I always love to work with those technologies. Despite its challenges, I always enjoy learning new technologies.
+                    I have a lot of web technologies in previous couple years. And I always love to work with those technologies. Despite its challenges and difficulties, I always enjoy learning new technologies.
                 </p>
                 <br />
 
@@ -50,7 +44,7 @@ const About = () => {
                                     alt={data.title}
                                 />
                                 <p
-                                    className="font-bold text-gray-700"
+                                    className="font-semibold text-white"
                                 >
                                     {data.title}
                                 </p>

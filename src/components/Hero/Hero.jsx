@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import heroImg from '/hero-img.jpeg';
 import { TypeAnimation } from 'react-type-animation';
-import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import scrollDown from "/scroll-down.svg"
 
 const Hero = () => {
@@ -25,7 +24,7 @@ const Hero = () => {
                         speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                         wrapper="h1"
                         repeat={0}
-                        className='text-4xl md:text-6xl text-white font-semibold z-50'
+                        className='text-4xl md:text-6xl text-white font-righteous font-semibold z-50'
                     />
                     {showSubtitle &&
                         <TypeAnimation

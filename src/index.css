@@ -9,19 +9,19 @@ html{
 /* hero image animation */
 @keyframes moveOutline {
   0% {
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 #692ce6;
   }
   25% {
-    box-shadow: 0 0 0 8px white, 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 8px white, 0 0 20px #773EEA;
   }
   50% {
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 #692ce6;
   }
   75% {
-    box-shadow: 0 0 0 8px white, 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 8px white, 0 0 20px #692ce6;
   }
   100% {
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 #692ce6;
   }
 }
 
@@ -46,7 +46,8 @@ html{
 
 .animation-circle  {
   animation: rotation 20s infinite;
-  background-color: #3B3B3B;
+  background-color: #692ce6;
+  opacity: 40%;
 }
 
 @keyframes rotation {
@@ -63,7 +64,8 @@ html{
 
 .animation-circle-two  {
   animation: rotations 20s infinite;
-  background-color: #3B3B3B;
+  background-color: #692ce6;
+  opacity: 40%;
 }
 
 @keyframes rotations {
@@ -84,7 +86,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3498db;
+  background-color: #773EEA;
 }
 
 @media screen and (max-width: 768px) {
