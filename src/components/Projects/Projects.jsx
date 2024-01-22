@@ -4,7 +4,7 @@ import { TiArrowRightThick } from "react-icons/ti";
 const Projects = () => {
     return (
         <div
-            className="mt-32 md:mt-48 px-4 md:px-30 lg:px-40 text-white"
+            className="mt-20 md:mt-28 px-4 md:px-30 lg:px-40 text-white"
             id="projects"
         >
             <p
@@ -15,7 +15,7 @@ const Projects = () => {
 
             {/* project card */}
             <div
-                className='mt-10 md:mt-20'
+                className='mt-6 md:mt-12'
             >
                 {projectData.map((project, idx) => (
                     <div
@@ -34,12 +34,12 @@ const Projects = () => {
                             className='p-5 text-center md:text-start flex flex-col items-center md:items-start md:justify-center md:w-1/2'
                         >
                             <p
-                                className='text-3xl font-bold mb-2 font-righteous'
+                                className='text-3xl font-bold mb-2'
                             >
                                 {project.title}
                             </p>
                             <p
-                                className='w-full md:text-xl'
+                                className='w-full'
                             >
                                 {project.description}
                             </p>

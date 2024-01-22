@@ -1,5 +1,6 @@
 import nextverse from "/nextverse.png";
 import hungryhulk from "/hungryhulk.png";
+import issueInsight from "/issue-insight.png";
 
 const projectData = [
   {
@@ -18,6 +19,14 @@ const projectData = [
     technologies: ["React", "Chakra UI", "Firebase"],
     github: "https://github.com/isakibul/nextverse",
     demo: "https://nextverse-zeta.vercel.app/",
+  },
+  {
+    image: issueInsight,
+    title: "IssueInsight",
+    description: "A issue tracker application with modern technologies.",
+    technologies: ["TypeScript", "Next.js", "Prisma", "MySQL"],
+    github: "https://example.com",
+    demo: "https://example.com",
   },
 ];
 

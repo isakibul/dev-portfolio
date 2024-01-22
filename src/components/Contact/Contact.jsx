@@ -16,7 +16,7 @@ const Contact = () => {
     }
     return (
         <div
-            className="mt-32 md:mt-48 px-4 pb-32 md:px-30 lg:px-40 text-white"
+            className="mt-32 md:mt-48 px-4 pb-60 md:px-30 lg:px-40 text-white"
             id="contact"
         >
             <p
@@ -25,7 +25,7 @@ const Contact = () => {
                 Get In Touch
             </p>
             <div
-                className="mt-10 md:mt-20 flex flex-col md:flex-row md:justify-between md:px-32 md:py-20 gap-4 text-center p-5 bg-[#0a122e] shadow-2xl"
+                className="mt-6 md:mt-12 flex flex-col md:flex-row md:justify-between md:px-32 md:py-20 gap-4 text-center p-5 bg-[#0a122e] shadow-2xl"
             >
                 <div
                     className="flex flex-col items-center gap-4 md:flex-row"

@@ -12,7 +12,7 @@ const About = () => {
                 About Me
             </h1>
             <div
-                className="mt-10 md:mt-20 py-10 px-4 md:py-20 md:px-32 text-sm md:text-base shadow-2xl text-justify bg-[#0a122e]"
+                className="mt-6 md:mt-12 py-10 px-4 md:py-20 md:px-32 text-sm md:text-base shadow-2xl text-justify bg-[#0a122e]"
             >
                 <p
                     className="md:tracking-wide"
@@ -23,7 +23,7 @@ const About = () => {
                 <p
                     className="md:tracking-wide"
                 >
-                    I have a lot of web technologies in previous couple years. And I always love to work with those technologies. Despite its challenges and difficulties, I always enjoy learning new technologies.
+                    I have worked with a lot of web technologies in previous couple years. And I always love to work with those technologies. Despite its challenges and difficulties, I always enjoy learning new technologies.
                 </p>
                 <br />
 
