@@ -7,7 +7,7 @@ const projectData = [
     image: hungryhulk,
     title: "HungryHulk",
     description: "A stunning restaurant application with plenty of context.",
-    technologies: ["React", "Tailwind CSS", "Strapi"],
+    technologies: ["React", "Tailwind", "Strapi"],
     github: "https://github.com/isakibul/hungryhulk",
     demo: "https://hungryhulk.vercel.app/",
   },
@@ -24,9 +24,9 @@ const projectData = [
     image: issueInsight,
     title: "IssueInsight",
     description: "A issue tracker application with modern technologies.",
-    technologies: ["TypeScript", "Next.js", "Prisma", "MySQL"],
-    github: "https://example.com",
-    demo: "https://example.com",
+    technologies: ["TypeScript", "Next.js", "Tailwind", "Prisma", "MySQL"],
+    github: "https://github.com/isakibul/issue-insight",
+    demo: "https://issue-insite.vercel.app/",
   },
 ];
 

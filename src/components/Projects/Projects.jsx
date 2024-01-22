@@ -44,12 +44,12 @@ const Projects = () => {
                                 {project.description}
                             </p>
                             <div
-                                className='flex justify-center gap-3 my-5'
+                                className='grid grid-cols-3 gap-4 my-5'
                             >
                                 {project.technologies.map((technology, index) => (
                                     <p
                                         key={index}
-                                        className='px-2 md:px-4 py-1 md:py-2 outline outline-1 outline-[#773EEA] rounded-md shadow-2xl text-xs md:text-sm lg:text-base'
+                                        className='flex items-center justify-center px-1 md:px-2 py-1 md:py-2 outline outline-1 outline-[#773EEA] rounded-md shadow-2xl text-xs md:text-sm'
                                     >
                                         {technology}
                                     </p>
@@ -61,14 +61,14 @@ const Projects = () => {
                                 <a
                                     href={project.github}
                                     target='_blank'
-                                    className='text-xl flex items-center font-semibold py-2 md:py-3 px-5 md:px-7 bg-[#773EEA] hover:bg-[#692ce6] ease-in duration-300 rounded-lg'
+                                    className='text-xl flex items-center font-semibold py-1 px-4 md:px-5 bg-[#773EEA] hover:bg-[#692ce6] ease-in duration-300 rounded-lg'
                                 >
                                     Github
                                 </a>
                                 <a
                                     href={project.demo}
                                     target='_blank'
-                                    className='flex items-center text-xl font-semibold py-2 md:py-4 px-5 md:px-7 text-white rounded-lg bg-[#773EEA] hover:bg-[#692ce6] ease-in duration-300'
+                                    className='flex items-center text-xl font-semibold py-2 md:py-4 px-5 md:px-6 text-white rounded-lg bg-[#773EEA] hover:bg-[#692ce6] ease-in duration-300'
                                 >
                                     Demo
                                     <TiArrowRightThick className='ms-1' />
