@@ -16,7 +16,7 @@ const Contact = () => {
     }
     return (
         <div
-            className="mt-32 md:mt-48 px-4 pb-60 md:px-30 lg:px-40 text-white"
+            className="mt-32 md:mt-48 px-4 pb-40 md:px-30 lg:px-40 text-white"
             id="contact"
         >
             <p

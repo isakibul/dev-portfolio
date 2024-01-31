@@ -6,16 +6,9 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import { IoIosArrowUp } from "react-icons/io";
-import bg from "/bg.jpg"
+import Footer from "../Footer/Footer";
 
 const Home = () => {
-    // const headerBackgroundStyle = {
-    //     backgroundImage: `url(${bg})`,
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundPosition: 'center',
-    // };
-
     return (
         <div className="font-rubik bg-[#0D1224]">
             <ScrollToTop
@@ -46,6 +39,7 @@ const Home = () => {
             <Projects />
             <About />
             <Contact />
+            <Footer />
         </div>
     );
 }

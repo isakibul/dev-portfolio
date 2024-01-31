@@ -3,6 +3,7 @@ import { NavbarElements } from "./NavbarElements";
 import { ImMenu } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false);
@@ -60,11 +61,13 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <button
-                        className="hidden md:block bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
-                    >
-                        Resume
-                    </button>
+                    <Link to={"https://drive.google.com/file/d/1rLWukVBq-0240tN8JzamSqvkPiJ65GYJ/view?usp=sharing"}>
+                        <button
+                            className="hidden md:block bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
+                        >
+                            Resume
+                        </button>
+                    </Link>
                 </div>
                 <div
                     className="md:hidden"
@@ -91,11 +94,15 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <button
-                        className="bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded"
-                    >
-                        Resume
-                    </button>
+                    <Link to={"https://drive.google.com/file/d/1RXV-hIB3y_47E7Z7TlGh6GIKThQBmC24/view?usp=drive_link"}>
+
+                        <button
+                            className="bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded"
+                        >
+                            Resume
+
+                        </button>
+                    </Link>
                     <IoClose
                         className="mt-6 cursor-pointer text-[30px] text-white hover:text-gray-400"
                         onClick={handleNav}
