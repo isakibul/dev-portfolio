@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      righteous: ["Righteous"],
-      rubik: ["Rubik"],
+      spaceGro: ["Space Grotesk"],
     },
   },
   plugins: [],

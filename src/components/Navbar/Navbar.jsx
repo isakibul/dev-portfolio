@@ -61,13 +61,13 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <Link to={"https://drive.google.com/file/d/1T5U-HhGgCSlNgUieiSf650CKA2n3DuMG/view?usp=sharing"}>
+                    <a href={"https://drive.google.com/file/d/1_He6QoMjfEFuhQkbCsvjtwmvJoy_9VMQ/view?usp=sharing"} target="_blank">
                         <button
                             className="hidden md:block bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
                         >
                             Resume
                         </button>
-                    </Link>
+                    </a>
                 </div>
                 <div
                     className="md:hidden"
@@ -94,7 +94,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <Link to={"https://drive.google.com/file/d/1RXV-hIB3y_47E7Z7TlGh6GIKThQBmC24/view?usp=drive_link"}>
+                    <a href={"https://drive.google.com/file/d/1_He6QoMjfEFuhQkbCsvjtwmvJoy_9VMQ/view?usp=sharing"} target="_blank">
 
                         <button
                             className="bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded"
@@ -102,7 +102,7 @@ const Navbar = () => {
                             Resume
 
                         </button>
-                    </Link>
+                    </a>
                     <IoClose
                         className="mt-6 cursor-pointer text-[30px] text-white hover:text-gray-400"
                         onClick={handleNav}

@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
-        <div className="font-rubik bg-[#0D1224]">
+        <div className="font-spaceGro bg-[#0D1224]">
             <ScrollToTop
                 smooth
                 style={{
