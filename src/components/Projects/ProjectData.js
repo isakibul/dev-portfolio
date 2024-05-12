@@ -26,7 +26,7 @@ const projectData = [
     description: "An event application with modern technologies.",
     technologies: ["TypeScript", "Next.js", "Tailwind CSS", "MongoDB"],
     github: "https://github.com/isakibul/eventwave",
-    demo: "https://eventwave-nu.vercel.app/",
+    demo: "https://eventwave-zeta.vercel.app/",
   },
 ];
 
