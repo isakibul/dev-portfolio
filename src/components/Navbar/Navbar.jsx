@@ -61,7 +61,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <a href={"https://drive.google.com/file/d/1RnMBqlJ7eo2qnbRDQ_4VPyUnJPJMUNAN/view"} target="_blank">
+                    <a href={""} target="_blank">
                         <button
                             className="hidden md:block bg-[#773EEA] hover:bg-[#692ce6] px-4 py-2 text-white text-xl font-bold rounded ease-in duration-300"
                         >
