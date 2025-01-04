@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import heroImg from '/hero-img.jpeg';
+import heroImg from '/hero-image.png';
 import { TypeAnimation } from 'react-type-animation';
 import scrollDown from "/scroll-down.svg"
 
@@ -31,7 +31,7 @@ const Hero = () => {
                             cursor={true}
                             sequence={[
                                 1000,
-                                'Dude! you are here?',
+                                'You are here?',
                                 1000,
                                 'Welcome!',
                                 1000,

@@ -29,7 +29,7 @@ const About = () => {
 
                 {/* technologies */}
                 <div>
-                    <strong>I have become confident using the following technologies:</strong>
+                    <strong>I have been worked with the following technologies:</strong>
                     <div
                         className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
                     >
